@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+jQuery(window).load(function() {
   jQuery(window).bind('scroll', function() {
   var navHeight = jQuery( window ).height() - 90;
     if (jQuery(window).scrollTop() > navHeight) {
