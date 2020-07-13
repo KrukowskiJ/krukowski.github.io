@@ -1,11 +1,11 @@
-$(document).ready(function(){
-  $(window).bind('scroll', function() {
-  var navHeight = $( window ).height() - 90;
-    if ($(window).scrollTop() > navHeight) {
-      $('nav').addClass('fixed');
+jQuery(document).ready(function(){
+  jQuery(window).bind('scroll', function() {
+  var navHeight = jQuery( window ).height() - 90;
+    if (jQuery(window).scrollTop() > navHeight) {
+      jQuery('nav').addClass('fixed');
     }
     else {
-      $('nav').removeClass('fixed');
+      jQuery('nav').removeClass('fixed');
     }
  });
 });
