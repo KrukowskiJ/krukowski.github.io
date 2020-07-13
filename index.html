@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" type="text/css" href="mystyle.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -86,20 +87,5 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <p class="copyright">Jakub Krukowski 2020 <br> &copy;<span> All Rights Reserved.</span></p>
 </footer>
 
-
-
-<script>
-     $(document).ready(function(){
-  	   $(window).bind('scroll', function() {
-  	   var navHeight = $( window ).height() - 90;
-  			 if ($(window).scrollTop() > navHeight) {
-  				 $('nav').addClass('fixed');
-  			 }
-  			 else {
-  				 $('nav').removeClass('fixed');
-  			 }
-  		});
-  	});
-</script>
 </body>
 </html>
