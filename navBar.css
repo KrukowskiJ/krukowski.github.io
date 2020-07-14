@@ -1,0 +1,150 @@
+.fixed{
+position: fixed;
+top: 0;
+height: 90px;
+z-index: 1;
+border-bottom-style: solid;
+border-bottom-color: white;
+border-width: thick;
+
+}
+nav
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  font-family: Raleway;
+  margin: 0 auto;
+	text-align: center;
+	background: #68739C;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+}
+.nav-links li{
+list-style: none;
+padding-top: 20px;
+}
+.nav-links a {
+  color: #ddd;
+font: 20px Raleway;
+margin: 0px 0px;
+padding: 15px;
+position: relative;
+}
+
+nav a:hover {
+  color: white;
+	text-decoration: none;
+}
+/* Top and Bottom borders come in */
+nav a:before, nav a:after
+{
+	  text-decoration: none;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 1.6px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: 1s;
+}
+nav a:before
+{
+    top: 0px;
+    transform: translateY(-15px);
+}
+nav a:after
+{
+    bottom: 0px;
+    transform: translateY(15px);
+}
+nav a:hover:before, nav a:hover:after
+{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+
+
+
+
+
+.nav-links{
+display: flex;
+justify-content: space-around;
+width: 40%
+}
+
+
+
+
+.burger{
+display: none;
+}
+.burger div{
+width: 25px;
+height: 3px;
+background-color: white;
+margin: 5px;
+
+}
+
+@media screen and (max-width:768px){
+  body{
+	overflow-x: hidden;
+
+    }
+    .burger{
+  display: block;
+cursor: pointer;
+
+    }
+    .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 88vh;
+    top:12vh;
+    background-color:  #68739C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+}
+
+.toggle .line1{
+   transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+   opacity: 0;
+}
+.toggle .line3{
+   transform: rotate(45deg) translate(-5px,-5px);
+}

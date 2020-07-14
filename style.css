@@ -1,0 +1,143 @@
+body html {
+      margin: 0;
+      overflow-x: hidden;
+      text-decoration: none;
+      scroll-behavior: smooth;
+  }
+
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+.intro {
+  top: 0;       /*Set the top edge of the positioned element*/
+  overflow-x:hidden;
+  background: #D3D7DB;
+  min-height: 100vh;
+  padding-top: 25vh;
+  padding-bottom: 5vh;
+}
+
+
+#About h1 {
+   font-size: 80px;
+   margin: 0;
+   color: #8F6E8D;
+   text-align: center;
+ }
+ h2 {
+    font-size: 40px;
+    margin: 0;
+    color: #422C41;
+    text-align: center;
+  }
+
+
+footer {
+  border-top-style: solid;
+  border-top-color: white;
+  border-width: thick;
+  font: 20px Raleway;
+  color: #ddd;
+  background: #68739C;
+  padding: 5em 0;
+  text-align: center;
+}
+
+.social-icons {
+  margin: 0 auto;
+  max-width: 15em;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.75em auto 6em; }
+
+.social-icon {
+  width: 25%;
+  height: 25%; }
+
+.social-icon:hover {
+    transform: scale(1.5);
+}
+
+.copyright::before {
+  color: #ddd;;
+  content: '';
+  display: block;
+  height: 1px;
+  background: #D3D7DB;
+  margin: 5em auto;
+  width: 25%; }
+
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+  .container {
+  	max-width:400px;
+  	width:100%;
+  	margin:0 auto;
+  	position:relative;
+  }
+
+  #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+  #contact {
+  	background:#D3D7DB;
+  	padding: 25px;
+  	margin: 55px 0;
+  }
+
+  #contact h3 {
+  	color: #8F6E8D;
+  	display: block;
+  	font-size: 30px;
+  	font-weight: bolder;
+  }
+
+  #contact h4 {
+    color: #422C41;
+  	margin:5px;
+  	display:inline-block;
+  	font-size:13px;
+  }
+
+  fieldset {
+  	margin: 0 0 10px;
+  	min-width: 100%;
+  	padding: 0;
+  	width: 100%;
+  }
+
+  #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea {
+  	width:100%;
+  	border:1px solid #CCC;
+  	background:#FFF;
+  	margin:0 0 5px;
+  	padding:10px;
+  }
+
+  #contact textarea {
+  	height:110px;
+  	max-width:100%;
+    resize:none;
+  }
+
+  #contact button[type="submit"] {
+  	cursor: pointer;
+  	width:100%;
+  	border:none;
+  	background:#0CF;
+  	color:#FFF;
+  	margin:0 0 5px;
+  	padding: 10px;
+  	font-size:15px;
+  }
+
+  #contact button[type="submit"]:hover {
+  	background:#09C;
+  }
+
+  #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+  #contact input:focus, #contact textarea:focus {
+  	outline:0;
+  	border:1.5px solid #999;
+  }
