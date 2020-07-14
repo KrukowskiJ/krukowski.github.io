@@ -110,7 +110,7 @@ margin: 5px;
 
 @media screen and (max-width:768px){
   body{
-
+	overflow-x: hidden;
 
     }
     .burger{
