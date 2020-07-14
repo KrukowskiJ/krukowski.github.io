@@ -1,4 +1,4 @@
-body {margin: 0; text-decoration: none;}
+body {margin: 0; overflow-x: hidden; text-decoration: none;}
 
 html {
   scroll-behavior: smooth;
