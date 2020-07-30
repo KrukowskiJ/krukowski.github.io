@@ -113,7 +113,7 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%;
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
   }
@@ -130,13 +130,12 @@ cursor: pointer;
 @keyframes navLinkFade{
   from{
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(130px);
   }
   to{
     opacity: 1;
     transform: translateX(0px);
   }
-
 }
 
 .toggle .line1{
@@ -146,5 +145,5 @@ cursor: pointer;
    opacity: 0;
 }
 .toggle .line3{
-   transform: rotate(45deg) translate(-5px,-5px);
+   transform: rotate(45deg) translate(-5px,-6px);
 }
